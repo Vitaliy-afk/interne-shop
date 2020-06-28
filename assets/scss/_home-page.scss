@@ -1,0 +1,133 @@
+.two-box-collection {
+    display: flex;
+    width: 1070px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.main-block {
+    background-color: #f7f7f7;
+    padding-bottom: 300px;
+    padding-top: 92px;
+    .container {
+        max-width: 1188px;
+    }
+}
+
+.two-box-list {
+    @extend %listreset;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
+    padding-bottom: 95px;
+    > li {
+        display: flex;
+        max-width: 50%;
+        flex: 0 0 50%;
+        padding: 0 15px 30px;
+    }
+}
+
+.two-box-card  {
+    display: flex;
+    align-items: center;
+    min-height: 251px;
+    width: 100%;
+    border: 5px solid #eeeeee;
+    padding: 50px;
+    background: white;
+    &.border-mod {
+        padding: 10px 20px;
+        align-items: stretch;
+        > div {
+            display: flex;
+            width: 100%;
+            p {
+                color:  #48689a;
+                font-size: 37px;
+                font-weight: 700;
+            }
+        }
+    }
+    > .width-box {
+        width: 100%;
+        max-width: 400px;
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            max-width: 300px;
+        }
+        mark {
+            background: none;
+            color: #48689a;
+        }
+    }
+    .border-line {
+        border: 5px solid #48689a;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .text-align {
+            text-align: center;
+            padding-left: 200px;
+            h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+            span {
+                color: black;
+                font-size: 24px;
+                letter-spacing: 10px;
+                font-weight: 700;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.support-ul {
+    @extend %listreset;
+    display: flex;
+    align-items: center;
+    margin: 0 -15px -30px;
+    flex-wrap: wrap;
+}
+
+.support-li {
+    display: flex;
+    align-items: center;
+    max-width: 33.33%;
+    padding: 0 15px 30px;
+    flex: 0 0 33.33%;
+    h1 {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0.6px;
+    }
+}
+
+.icon-item {
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+.support-box {
+    width: 100%;
+    max-width: 290px;
+    h1 {
+        margin: 0;
+        line-height: 1.7;
+        padding-bottom: 8px;
+        letter-spacing: 0.6px;
+    }
+    P {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}

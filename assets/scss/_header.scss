@@ -6,7 +6,7 @@
     padding: 14px 0 14px 0;
     .container {
         max-width: 1205px;
-        @include media('<1024px'){
+        @include media('<768px'){
             visibility: hidden;
         }
     }
@@ -21,7 +21,6 @@
     align-items: center;
     @extend %listreset;
     @include media ('<1024px'){
-
     }
     span {
         font-size: 12px;
@@ -32,7 +31,7 @@
 
 .burger-wrap {
 	visibility: hidden;
-    @include media('<1024px'){
+    @include media('<768px'){
         width: 100%;
         display: inline-block;
         visibility: visible;
@@ -41,7 +40,7 @@
         display:none;
     }
     .burger-active &{
-        @include media('<1024px'){
+        @include media('<768px'){
             opacity: 1;
             visibility: visible;
         }
@@ -146,17 +145,16 @@ form {
         background-color: transparent;
         width: 300px;
     }
-}
-
-button {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    right: 0px;
-    top: 0;
-    .fa {
-        color: $white;
-        font-size: 13px;
+    button {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        .fa {
+            color: $white;
+            font-size: 13px;
+        }
     }
 }
 
