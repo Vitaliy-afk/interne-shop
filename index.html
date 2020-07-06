@@ -5,12 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Internet-shop</title>
-	<link media="all" rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+	<link media="all" rel="stylesheet" href="./assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-	<script src="./assets/js/jquery.main.js" defer></script>
-	<script src="./assets/js/main.js" defer></script>
 	<script src="./assets/js/slick.min.js" defer></script>
+	<script src="./assets/js/jquery.main.js" defer></script>
+	<script src="./assets/js/jquery.fancybox.min.js" defer></script>
+	<script src="./assets/js/main.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
 </head>
 <body>
 <div id="wrapper">
@@ -179,17 +182,16 @@
 				</header>
 				<div class="section-list">
 					<div class="left-columns">
-						<div class="class-witdh">
-							<div class="search-list-line">
-								<form class="search-position-left-columns">
-									<input type="text" class="left-search" placeholder="Search">
-									<button type="submit" class="color-black">
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</button>
-								</form>
-							</div>
-							<div class="media-include">
-								<div class="block-ul-class">
+						<div class="search-list-line">
+							<form class="search-position-left-columns">
+								<input type="text" class="left-search" placeholder="Search">
+								<button type="submit" class="color-black">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</form>
+						</div>
+						<div class="media-include">
+							<div class="block-ul-class">
 								<h2 class="name-class">Popular post</h2>
 								<ul class="ul class">
 									<li class="section-post">
@@ -301,37 +303,36 @@
 									</li>
 								</ul>
 							</div>
+						</div>
+						<div class="table-zone">
+							<div class="table-zone-name">
+								<h2>Keyword</h2>
 							</div>
-							<div class="table-zone">
-								<div class="table-zone-name">
-									<h2>Keyword</h2>
-								</div>
-								<div class="table">
-									<table>
-										<tbody>
+							<div class="table">
+								<table>
+									<tbody>
+										<tr>
+											<td>Fashion</td>
+											<td>Shoes</td>
+											<td>T-shirt</td>
+										</tr>
+										<tr>
+											<td>Sports</td>
+											<td>socks</td>
+											<td>shirt</td>
+										</tr>
 											<tr>
-												<td>Fashion</td>
-												<td>Shoes</td>
-												<td>T-shirt</td>
-											</tr>
-											<tr>
-												<td>Sports</td>
-												<td>socks</td>
-												<td>shirt</td>
-											</tr>
-												<tr>
-												<td>Girls</td>
-												<td>Pant</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+											<td>Girls</td>
+											<td>Pant</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
 					<div class="right-columns">
 						<ul class="post-column">
-							<li class="info-post">
+							<li class="info-post-col">
 								<div class="image-post">
 									<a href="#">
 										<img src="./assets/image/image1.png" class="image" alt="image description">
@@ -342,30 +343,28 @@
 											<p>26 feb</p>
 										</a>
 									</div>
-									<div class="user-panel">
-										<ul class="user-social-panel">
-											<li>
-												<a href="#">
-													<i class="fa fa-user" aria-hidden="true"></i>
-													Admin
-												</a>
-											<li>
-												<a href="#" >
-													<i class="fa fa-facebook" aria-hidden="true"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-twitter" aria-hidden="true"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" >
-													<i class="fa fa-google" aria-hidden="true"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
+									<ul class="user-social-panel">
+										<li>
+											<a href="#">
+												<i class="fa fa-user" aria-hidden="true"></i>
+												Admin
+											</a>
+										<li>
+											<a href="#" >
+												<i class="fa fa-facebook" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-twitter" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" >
+												<i class="fa fa-google" aria-hidden="true"></i>
+											</a>
+										</li>
+									</ul>
 								</div>
 								<div class="post">
 									<h1>4 Denim Shapes Worth Hanging Up Your SKINNY JEANS </h1>
@@ -382,7 +381,7 @@
 									</a>
 								</div>
 							</li>
-							<li class="info-post">
+							<li class="info-post-col">
 								<div class="image-post">
 									<a href="#">
 										<img src="./assets/image/image1.png" class="image" alt="image description">
@@ -393,30 +392,28 @@
 											<p>26 feb</p>
 										</a>
 									</div>
-									<div class="user-panel">
-										<ul class="user-social-panel">
-											<li>
-												<a href="#">
-													<i class="fa fa-user" aria-hidden="true"></i>
-													Admin
-												</a>
-											<li>
-												<a href="#" >
-													<i class="fa fa-facebook" aria-hidden="true"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-twitter" aria-hidden="true"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" >
-													<i class="fa fa-google" aria-hidden="true"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
+									<ul class="user-social-panel">
+										<li>
+											<a href="#">
+												<i class="fa fa-user" aria-hidden="true"></i>
+												Admin
+											</a>
+										<li>
+											<a href="#" >
+												<i class="fa fa-facebook" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-twitter" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" >
+												<i class="fa fa-google" aria-hidden="true"></i>
+											</a>
+										</li>
+									</ul>
 								</div>
 								<div class="post">
 									<h1>4 Denim Shapes Worth Hanging Up Your SKINNY JEANS </h1>
@@ -433,7 +430,7 @@
 									</a>
 								</div>
 							</li>
-							<li class="info-post">
+							<li class="info-post-col">
 								<div class="image-post">
 									<a href="#">
 										<img src="./assets/image/image1.png" class="image" alt="image description">
@@ -444,30 +441,28 @@
 											<p>26 feb</p>
 										</a>
 									</div>
-									<div class="user-panel">
-										<ul class="user-social-panel">
-											<li>
-												<a href="#">
-													<i class="fa fa-user" aria-hidden="true"></i>
-													Admin
-												</a>
-											<li>
-												<a href="#" >
-													<i class="fa fa-facebook" aria-hidden="true"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-twitter" aria-hidden="true"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" >
-													<i class="fa fa-google" aria-hidden="true"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
+									<ul class="user-social-panel">
+										<li>
+											<a href="#">
+												<i class="fa fa-user" aria-hidden="true"></i>
+												Admin
+											</a>
+										<li>
+											<a href="#" >
+												<i class="fa fa-facebook" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-twitter" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" >
+												<i class="fa fa-google" aria-hidden="true"></i>
+											</a>
+										</li>
+									</ul>
 								</div>
 								<div class="post">
 									<h1>4 Denim Shapes Worth Hanging Up Your SKINNY JEANS </h1>
@@ -484,7 +479,7 @@
 									</a>
 								</div>
 							</li>
-							<li class="info-post">
+							<li class="info-post-col">
 								<div class="image-post">
 									<a href="#">
 										<img src="./assets/image/image1.png" class="image" alt="image description">
@@ -495,30 +490,28 @@
 											<p>26 feb</p>
 										</a>
 									</div>
-									<div class="user-panel">
-										<ul class="user-social-panel">
-											<li>
-												<a href="#">
-													<i class="fa fa-user" aria-hidden="true"></i>
-													Admin
-												</a>
-											<li>
-												<a href="#" >
-													<i class="fa fa-facebook" aria-hidden="true"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-twitter" aria-hidden="true"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" >
-													<i class="fa fa-google" aria-hidden="true"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
+									<ul class="user-social-panel">
+										<li>
+											<a href="#">
+												<i class="fa fa-user" aria-hidden="true"></i>
+												Admin
+											</a>
+										<li>
+											<a href="#" >
+												<i class="fa fa-facebook" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-twitter" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" >
+												<i class="fa fa-google" aria-hidden="true"></i>
+											</a>
+										</li>
+									</ul>
 								</div>
 								<div class="post">
 									<h1>4 Denim Shapes Worth Hanging Up Your SKINNY JEANS </h1>
@@ -739,6 +732,7 @@
 		</div>
 		<p class="copyrights">
 			<span>&copy; Copyrights MOHHAMAD SHOANG. All rights researved 2016></span>
+		</p>
 	</footer>
 </div>
 </body>

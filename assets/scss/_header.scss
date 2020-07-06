@@ -386,9 +386,6 @@ input[type=text] {
 
 .col a img {
     @include media('<640px'){
-        width: 70%;
-    }
-    @include media('<640px'){
         width: 50%;
     }
 }

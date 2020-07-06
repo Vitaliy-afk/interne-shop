@@ -3,12 +3,17 @@
 
 .slider-position {
     position: relative;
-    
 }
 
 
 .slider-block {
     text-transform: uppercase;
+    .slick-list {
+        overflow: hidden;
+    }
+    .slick-track {
+        display: flex;
+    }
 }
 
 .slider-block h1 {
@@ -59,7 +64,7 @@
 }
 
 .slider-block .slick-arrow.slick-prev {
-    background: url(../image/prev.png);
+    background: url('../image/prev.png');
     border: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +75,7 @@
 
 
 .slider-block .slick-arrow.slick-next {
-    background: url(../image/next.png);
+    background: url('../image/next.png');
     border: none;
     background-position: center;
     background-repeat: no-repeat;

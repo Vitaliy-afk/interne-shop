@@ -28,7 +28,21 @@ function initSlickSlider() {
     fade: true,
     cssEase: 'linear',
     rows: false
+});
+
+jQuery('.slider-assistant').slick({
+  arrows: true,
+  adaptiveHeight: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  easing: 'ease',
+  infinity: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  rows: false
 })};
+
 
 
 console.log(2232);

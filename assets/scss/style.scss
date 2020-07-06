@@ -29,6 +29,8 @@ $media-expressions: (
 @import 'helpers';
 @import 'slider';
 @import 'burger';
+@import 'home-page';
+@import 'slick';
 
 #main {
 	background-color: $white;
@@ -162,11 +164,11 @@ td {
 		width: 100%
 	}
 	@include media('>=1024px'){
-		width: 315px;
+		width: 322px;
 	}
-	@include media('>=1280px'){
-		width: 494px;
-	}
+	// @include media('>=1280px'){
+	// 	width: 494px;
+	// }
 }
 
 
@@ -176,7 +178,7 @@ td {
 		width: 900px;
 	}
 	@include media('>=1024px'){
-		padding-left: 25px;
+		padding-left: 20px;
 	}
 	@include media('<1024px'){
 		padding-left: 15px;
@@ -191,6 +193,8 @@ td {
 
 .post-column {
 	position: relative;
+	margin-top: -6px;
+	// margin-bottom:  -55px;
 }
 
 .ul {
@@ -246,18 +250,18 @@ td {
 
 
 
-.info-post {
+.info-post-col {
+	padding-top: 6px;
 	padding-bottom: 55px;
-	padding-top: 5px;
 	display: block;
 	@include media('>=tablet'){
+		padding-top: 6px;
 		padding-bottom: 55px;
-		padding-top: 5px;
 		display: flex;
 	}
 	@include media('>=320px'){
+		padding-top: 6px;
 		padding-bottom: 55px;
-		padding-top: 5px;
 		display: block;
 	}
 	
@@ -316,7 +320,7 @@ td {
 			width: 350px;
 		}
 		@include media('>=1280px'){
-			width: 100%;
+			width: 273px;
 		}
 		@include media('>=1024px'){
 			width: 271px;
@@ -340,6 +344,10 @@ td {
 	}
 }
 
+.post span {
+	padding-top: 20px;
+    font-size: 14px;
+}
 
 .post h1 {
 	font-size: 14px;
@@ -373,22 +381,8 @@ blockquote {
 }
 
 
-.class-witdh {
-	@include media('>=1024px'){
-		
-	}
-	@include media('>=1024px'){
-		display: block;
-		max-width: 300px;
-		margin: 0 0 0 auto;
-	}
-}
 
 
-span {
-	padding-top: 20px;
-	font-size: 14px;
-}
 
 
 .search-list-line {
@@ -402,13 +396,15 @@ span {
 		justify-content: center;
 		padding-bottom: 30px;
 	}
-	button{
-		height: 50px;
-		width: 56px;
-		top: 0;
-		border: none;
-		cursor: pointer;
-		position: absolute;
+	button {
+		height: 56px;
+        width: 56px;
+        top: 0;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        left: 80%;
+        background-color: transparent;
 	}
 }
 
@@ -500,17 +496,17 @@ span {
 	@include media('<640px'){
 		width: 100%;
 	}
-	li:nth-child(1){
-		margin-right: 63px;
+	li:nth-child(1) {
+		padding-right: 60px;
 		.fa {
-			margin-left: 20px;
-        	margin-right: 10px;
+			padding-left: 20px;
+        	padding-right: 10px;
 		}
 	}
 
 	li:nth-child(2){
-		margin-right: 20px;
-        margin-left: 20px;
+		padding-right: 20px;
+        padding-left: 20px;
 	}
 
 	li:nth-child(3){
@@ -521,7 +517,6 @@ span {
 		color: $white;
 		font-size: 12px;
 		text-decoration: none;
-		padding-top: 11px;
 	}
 }
 
@@ -683,13 +678,13 @@ span {
 
 
 .box-form button {
-	height: 42px;
-    width: 74px;
-    position: absolute;
-    top: 6px;
-    right: 15px;
-    cursor: pointer;
-    padding: 0 5px;
+	height: 48px;
+	width: 74px;
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	cursor: pointer;
+	padding: 0 5px;
 }
 
 
