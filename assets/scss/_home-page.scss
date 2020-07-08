@@ -786,6 +786,7 @@
         top: 60%;
         width: 100%;
         transform: translateX(30px);
+        transition: 3s ease-in-out;
     }
     h1 {
         font-size: 18px;
@@ -817,7 +818,6 @@
 
 .catalog-columns {
     @extend %listreset;
-   
 }
 
 
