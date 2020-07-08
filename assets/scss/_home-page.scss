@@ -758,32 +758,67 @@
 
 .catalog-type-grid-section {
     background-color: #ffffff;
+    padding-bottom: 46px;
 }
 
-.catalog-grid2 {
-    margin: -0 -15px;
+.catalog-grid1 {
+    @extend %listreset;
+    padding-top: 96px;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
     display: flex;
-    padding-top: 95px;
 }
 
-.catalog {
+.header-class {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 40px;
+    transform: translateX(0px);
+    transition: .2s;
+    cursor: pointer;
+    :hover:before {
+        content: '';
+        position: absolute;
+        max-width: 50px;
+        height: 2px;
+        background-color: #48689a;
+        top: 60%;
+        width: 100%;
+        transform: translateX(30px);
+    }
+    h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+.colomns11 {
+    position: relative;
     @extend %listreset;
     display: flex;
-    flex-wrap: wrap;
-    width: 33%;
-    flex: 0 1 33%;
-    padding: 0 15px;
-    &.grid-col3 {
+    flex-direction: column;
+    max-width: 33.33%;
+    flex: 0 1 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+    &.second {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
     }
-    &.grid-col2 {
+    &.third {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
 
+.catalog-columns {
+    @extend %listreset;
+   
+}
 
 
 .section-header h1 {
@@ -792,16 +827,22 @@
     font-size: 18px;
 }
 
-
-.image-price-title {
-    display: flex;
+.topic-title {
+    p {
+        font-size: 14px;
+        font-family: 'Myriad Pro';
+        line-height: 1.5;
+    }
 }
 
-
-.image-picture {
-    padding-right: 25px;
+.topic-price {
+    padding-bottom: 18px;
+    span {
+        font-size: 12px;
+        font-weight: 700;
+        color: #48689a;
+    }
 }
-
 
 
 .image-picture a {
@@ -822,57 +863,73 @@
 
 }
 
-.block-serios {
+.catalog-col {
+    @extend %listreset;
     display: flex;
-    padding-bottom: 66px;
+    padding-bottom: 60px;
     flex-wrap: wrap;
-    &.fix-rev {
-        flex-direction: row-reverse;
-        display: flex;
-    }
-
-}
-
-.section-header {
-    padding-bottom: 30px;
     position: relative;
-    :before {
-        content: '';
-        position: absolute;
-        max-width: 50px;
-        height: 4px;
-        background-color: #48689a;
-        top: 25px;
-        width: 100%;
-    }
-    &.fix h1 {
-        text-align: center;
-        position: relative;
-        :before {
-            content: '';
-            position: absolute;
-            max-width: 50px;
-            height: 4px;
-            background-color: #48689a;
-            top: 25px;
-            width: 100%;
-            left: 50px;
+    &.rev {
+        display: flex;
+        flex-direction: row-reverse;
+        .image-picture {
+            padding-right: 0;
+            padding-left: 20px;
         }
     }
-    &.fix2 h1 {
-        text-align: right;
+    .image-picture {
+        padding-right: 20px;
     }
 }
 
+
+
 .catalog-icons {
+    @extend %listreset;
     display: flex;
-    .basket {
-        padding-right: 50px;
+    margin: 0 -15px;
+    li {
+        padding: 0 15px;
     }
 }
+
 
 .like a {
     display: block;
+}
+
+.basket a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.basket a {
+    position: relative;
+    &:hover {
+        background-color: #48689a;
+        width: 30px;
+    }
+}
+
+.basket a img:hover {
+    filter: brightness(0) invert(1);
+}
+
+.add-card2 {
+    position: absolute;
+    top: 45px;
+    right: 40%;
+    bottom: 0;
+    width: 100px;
+    height: 35px;
+    visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     
 }
 
+.basket:hover .add-card2 {
+    visibility: visible;
+    opacity: 1;
+}
