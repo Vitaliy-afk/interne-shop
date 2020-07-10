@@ -774,10 +774,9 @@
     text-transform: uppercase;
     position: relative;
     padding-bottom: 40px;
-    transform: translateX(0px);
     transition: .2s;
     cursor: pointer;
-    :hover:before {
+    :before {
         content: '';
         position: absolute;
         max-width: 50px;
@@ -785,8 +784,6 @@
         background-color: #48689a;
         top: 60%;
         width: 100%;
-        transform: translateX(30px);
-        transition: 3s ease-in-out;
     }
     h1 {
         font-size: 18px;
@@ -812,12 +809,16 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        position: relative;
     }
 }
 
 
 .catalog-columns {
     @extend %listreset;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
@@ -837,11 +838,20 @@
 
 .topic-price {
     padding-bottom: 18px;
+    color: #48689a;
     span {
         font-size: 12px;
         font-weight: 700;
-        color: #48689a;
+        mark {
+            text-decoration: line-through;
+            background: none;
+            color: #48689a;
+        }
     }
+}
+
+.title-info {
+    position: relative;
 }
 
 
@@ -872,9 +882,16 @@
     &.rev {
         display: flex;
         flex-direction: row-reverse;
+        .title-info {
+            text-align: right;
+        }
         .image-picture {
             padding-right: 0;
-            padding-left: 20px;
+            padding-left: 29px;
+        }
+        .catalog-icons {
+           display: flex;
+           flex-direction: row-reverse;
         }
     }
     .image-picture {
