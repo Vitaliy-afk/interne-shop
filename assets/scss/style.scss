@@ -19,6 +19,7 @@ $media-expressions: (
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import 'variables';
 @import 'include-media';
 @import 'common';
@@ -591,7 +592,7 @@ blockquote {
 
 //****TWO-BOX-CONTENT****//
 
-.two-box-grid {
+.two-box-grid-section {
 	background-color: $white;
 	margin-bottom: 48px;
 	.container {
@@ -609,7 +610,7 @@ blockquote {
 }
 
 
-.box1-image{
+.box1-image {
 	background: #eeeeee content-box;
 	border: solid .5em #eeeeee;
 	padding: .5em;
@@ -697,7 +698,7 @@ blockquote {
 
 //****SPONSORS-GRID****//
 
-.sponsors-grid {
+.sponsors-grid-section {
 	background: #eeeeee;
 	margin-bottom: 87px;
 	.container {

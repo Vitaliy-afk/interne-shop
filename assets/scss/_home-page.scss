@@ -302,6 +302,7 @@
         .price-gift {
             visibility: visible;
             opacity: 1;
+           
         }
     }
     .goods-title__picture img {
@@ -398,6 +399,7 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    transition: .2s;
     p {
         color: $white;
     }
@@ -622,12 +624,12 @@
     font-size: 24px;
 }
 
-.section-title {
+.title-section {
     background-color: #f7f7f7;
     padding-bottom: 105px;
 }
 
-.section-title-grid > ul {
+.title-section-grid > ul {
     @extend %listreset;
     display: flex;
     flex-wrap: wrap;
@@ -754,14 +756,14 @@
 
 //******************//
 
-/////catalog-grid-section////
+/////CATALOG_GRID_SECTION////
 
-.catalog-type-grid-section {
+.catalog-rated-section {
     background-color: #ffffff;
     padding-bottom: 46px;
 }
 
-.catalog-grid1 {
+.catalog-rated-grid {
     @extend %listreset;
     padding-top: 96px;
     margin-left: -15px;
@@ -770,11 +772,10 @@
     display: flex;
 }
 
-.header-class {
+.header-rated-name {
     text-transform: uppercase;
     position: relative;
     padding-bottom: 40px;
-    transition: .2s;
     cursor: pointer;
     :before {
         content: '';
@@ -791,7 +792,7 @@
     }
 }
 
-.colomns11 {
+.columns-rated {
     position: relative;
     @extend %listreset;
     display: flex;
@@ -809,12 +810,11 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        position: relative;
     }
 }
 
 
-.catalog-columns {
+.block-rated-columns {
     @extend %listreset;
     display: flex;
     flex-wrap: wrap;
@@ -822,7 +822,7 @@
 }
 
 
-.section-header h1 {
+.header-rated-name h1 {
     margin: 0;
     text-transform: uppercase;
     font-size: 18px;
@@ -831,8 +831,11 @@
 .topic-title {
     p {
         font-size: 14px;
-        font-family: 'Myriad Pro';
+        font-weight: 400;
         line-height: 1.5;
+        padding-bottom: 7px;
+        letter-spacing: 0.3px;
+        margin-top: -6px;
     }
 }
 
@@ -850,10 +853,6 @@
     }
 }
 
-.title-info {
-    position: relative;
-}
-
 
 .image-picture a {
     max-width: 70px;
@@ -861,8 +860,8 @@
     width: 100%;
     display: block;
     background-color: #eeeeee;
-
 }
+
 
 .image-picture a img {
     max-width: 70px;
@@ -870,8 +869,8 @@
     width: 100%;
     display: block;
     background-color: #eeeeee;
-
 }
+
 
 .catalog-col {
     @extend %listreset;
@@ -887,9 +886,9 @@
         }
         .image-picture {
             padding-right: 0;
-            padding-left: 29px;
+            padding-left: 10px;
         }
-        .catalog-icons {
+        .goods-gift {
            display: flex;
            flex-direction: row-reverse;
         }
@@ -900,53 +899,36 @@
 }
 
 
-
-.catalog-icons {
-    @extend %listreset;
+.goods-gift {
+    margin: 0 -5px;
     display: flex;
-    margin: 0 -15px;
-    li {
-        padding: 0 15px;
+    .gift {
+        padding: 0 5px;
+    }
+} 
+
+
+.border-gift {
+    padding: 4px;
+    border: 1px solid #48689a;
+    text-align: center;
+    a {
+        height: 15px;
+        width: 15px;
+        width: 100%; 
+        height: 100%;
+        align-items: center;
+        display: flex;
     }
 }
 
-
-.like a {
-    display: block;
-}
-
-.basket a {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-.basket a {
-    position: relative;
-    &:hover {
+.gift {
+    &.buy:hover {
         background-color: #48689a;
-        width: 30px;
+        border-left: 1px solid #fff;
     }
 }
 
-.basket a img:hover {
-    filter: brightness(0) invert(1);
-}
 
-.add-card2 {
-    position: absolute;
-    top: 45px;
-    right: 40%;
-    bottom: 0;
-    width: 100px;
-    height: 35px;
-    visibility: hidden;
-    opacity: 0;
-    visibility: hidden;
-    
-}
 
-.basket:hover .add-card2 {
-    visibility: visible;
-    opacity: 1;
-}
+//******************//
