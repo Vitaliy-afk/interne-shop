@@ -27,7 +27,8 @@ function initSlickSlider() {
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    rows: false
+    rows: false,
+    swipe: true,
 });
 
 jQuery('.slider-assistant').slick({

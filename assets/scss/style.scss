@@ -379,12 +379,7 @@ blockquote {
     line-height: 2.1;
     padding-top: 11px;
     padding-bottom: 7px;
-	
 }
-
-
-
-
 
 
 .search-list-line {
@@ -687,6 +682,11 @@ blockquote {
 	right: 15px;
 	cursor: pointer;
 	padding: 0 5px;
+	img {
+		position: absolute;
+        top: 12px;
+        left: 23px;
+	}
 }
 
 
@@ -744,6 +744,7 @@ blockquote {
 
 .footer-cols {
 	padding-bottom: 53px;
+	margin: 0 -15px;
 }
 
 .ul-cols {
@@ -845,6 +846,8 @@ blockquote {
 
 .banks-payment-line {
 	display: flex;
+	@extend %listreset;
+	flex-wrap: wrap;
 	&::before {
 		position: absolute;
         content: "";
