@@ -33,6 +33,8 @@ $media-expressions: (
 @import 'home-page';
 @import 'slick';
 @import 'scroll';
+@import '404';
+@import 'blog_details';
 
 #main {
 	background-color: $white;
@@ -106,6 +108,7 @@ header h1{
 
 
 .section-list {
+	// flex-wrap: wrap;
 	width: 100%;
 	@include media('>=1024px'){
 		display: flex;
@@ -147,7 +150,14 @@ td {
 	width: 271px;
     position: relative;
     opacity: 50%;
-    padding-left: 10px;
+	padding-left: 10px;
+	button {
+		position: absolute;
+        top: 20px;
+        right: 26px;
+        border: none;
+        font-size: 12px;
+	}
 }
 
 .search-position-left-columns input[type=text] {
@@ -400,8 +410,9 @@ blockquote {
         border: none;
         cursor: pointer;
         position: absolute;
-        left: 80%;
-        background-color: transparent;
+        left: 78%;
+		background-color: transparent;
+		font-size: 14px;
 	}
 }
 

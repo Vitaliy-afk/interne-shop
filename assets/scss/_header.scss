@@ -124,11 +124,11 @@
         line-height: 1.1;
         color: $white;
     }
-}
-
-form {
-    position: relative;
-    max-width: 300px;
+    
+    form {
+        position: relative;
+        max-width: 300px;
+    }
 }
 
 
@@ -138,6 +138,9 @@ form {
     border: none;
     background-color: transparent;
     justify-content: center;
+    form {
+        position: relative;
+    }
     input {
         outline: none;
         border: none;
