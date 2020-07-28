@@ -179,7 +179,7 @@
 
 .user-post {
     display: flex;
-    padding-bottom: 26px;
+    padding-bottom: 34px;
     position: relative;
     width: 750px;
     :after {
@@ -192,10 +192,11 @@
         height: 2px;
     }
     &.right {
-        margin: 0px 45px;
+        margin: -20px 45px 0;
     }
     .user-reply{
         text-decoration: none;
+        padding-bottom: 35px;
     }
     .reply {
         text-align: right;
@@ -251,20 +252,20 @@
 }
 
 
-.comments-block {
+.users-comments-block {
     padding-top: 40px;
-    // padding-bottom: 42px;
     .comments {
         display: block;
         font-size: 24px;
         text-decoration: none;
-        line-height: 1.5;
+        line-height: 1.7;
+        padding-bottom: 30px;
     }
 }
 
-.comments-block a {
+.users-comments-block a {
     display: block;
-    padding-bottom: 35px;
+    
 }
 
 .line1-form {

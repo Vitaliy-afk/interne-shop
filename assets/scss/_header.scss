@@ -276,6 +276,7 @@ input[type=text] {
 
 
 .submenu {
+    padding: 5px!important;
     @extend %listreset;
     position: absolute;
     opacity: 0;
@@ -293,9 +294,7 @@ input[type=text] {
 
 
 .submenu-item {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 10px;
+  padding: 5px;
 }
 
 

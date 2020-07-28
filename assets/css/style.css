@@ -245,6 +245,7 @@ input[type=text] {
 }
 
 .submenu {
+  padding: 5px !important;
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -258,9 +259,7 @@ input[type=text] {
 }
 
 .submenu-item {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 10px;
+  padding: 5px;
 }
 
 .header-logo-nav-buy {
@@ -2542,7 +2541,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 26px;
+  padding-bottom: 34px;
   position: relative;
   width: 750px;
 }
@@ -2558,11 +2557,12 @@ img {
 }
 
 .user-post.right {
-  margin: 0px 45px;
+  margin: -20px 45px 0;
 }
 
 .user-post .user-reply {
   text-decoration: none;
+  padding-bottom: 35px;
 }
 
 .user-post .reply {
@@ -2617,20 +2617,20 @@ img {
   background-position: center;
 }
 
-.comments-block {
+.users-comments-block {
   padding-top: 40px;
 }
 
-.comments-block .comments {
+.users-comments-block .comments {
   display: block;
   font-size: 24px;
   text-decoration: none;
-  line-height: 1.5;
+  line-height: 1.7;
+  padding-bottom: 30px;
 }
 
-.comments-block a {
+.users-comments-block a {
   display: block;
-  padding-bottom: 35px;
 }
 
 .line1-form {
