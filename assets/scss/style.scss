@@ -43,8 +43,8 @@ $media-expressions: (
 
 
 .section-block {
-	margin-top: 161px;
-	margin-bottom: 170px;
+	padding-top: 161px;
+	padding-bottom: 170px;
 	background-color: #fff;
 	.container {
 		width: 870px;
@@ -97,7 +97,7 @@ $media-expressions: (
     position: relative;
 }
 
-header h1{
+header h1 {
     text-align: center;
     padding-bottom: 55px;
     padding-top: 92px;
@@ -226,7 +226,7 @@ td {
    	 	font-weight: 300;
     	letter-spacing: 0.3px;
    	 	line-height: 1.9;
-    	padding-bottom: 15px;
+    	margin-bottom: 15px;
 	}
 }
 
@@ -597,7 +597,7 @@ blockquote {
 
 .two-box-grid-section {
 	background-color: $white;
-	margin-bottom: 48px;
+	padding-bottom: 48px;
 	.container {
 		max-width: 1190px;
 	}
@@ -708,7 +708,7 @@ blockquote {
 //****SPONSORS-GRID****//
 .sponsors-grid-section {
 	background: #eeeeee;
-	margin-bottom: 87px;
+	padding-bottom: 87px;
 	.container {
 		max-width: 1175px;
 	}

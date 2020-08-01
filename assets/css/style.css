@@ -2933,8 +2933,8 @@ img {
 }
 
 .section-block {
-  margin-top: 161px;
-  margin-bottom: 170px;
+  padding-top: 161px;
+  padding-bottom: 170px;
   background-color: #fff;
 }
 
@@ -3067,7 +3067,7 @@ td {
   font-weight: 300;
   letter-spacing: 0.3px;
   line-height: 1.9;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .social-stat {
@@ -3329,7 +3329,7 @@ blockquote {
 
 .two-box-grid-section {
   background-color: #fff;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 .two-box-grid-section .container {
@@ -3440,7 +3440,7 @@ blockquote {
 
 .sponsors-grid-section {
   background: #eeeeee;
-  margin-bottom: 87px;
+  padding-bottom: 87px;
 }
 
 .sponsors-grid-section .container {
