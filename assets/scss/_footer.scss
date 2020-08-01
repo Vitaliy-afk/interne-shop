@@ -1,0 +1,189 @@
+#footer {
+	margin-bottom: 100px;
+    padding-top: 10px;
+    margin: 0 -15px;
+	.container {
+		max-width: 1203px;
+	}
+}
+
+.footer-cols {
+	padding-bottom: 53px;
+	margin: 0 -15px;
+}
+
+.ul-cols {
+	display: flex;
+	flex-wrap: wrap;
+	@extend %listreset;
+	width: 100%;
+	a {
+		display: block;
+		text-decoration: none;
+		color: $black;
+	}
+	h1 {
+		text-transform: uppercase;
+		font-size: 14px;
+		margin: 0;
+	}
+	p 	{
+		font-size: 14px;
+    	font-weight: 300;
+		line-height: 1.76;
+		margin-bottom: 20px;
+		max-width: 250px;
+	}
+}
+
+
+
+.logo2 {
+	margin-bottom: 11px;
+	margin-top: -7px;
+}
+
+
+.footer-col {
+	padding: 0 15px;
+}
+
+
+.width32 {
+	width: 32%;
+	p {
+		margin-bottom: 27px;
+	}
+}
+
+
+.width18 {
+	width: 18%;
+	p {
+	font-size: 14px;
+	margin-bottom: 0px;
+    }
+    h1 {
+        margin-bottom: 30px;
+    }
+}
+
+
+.width26 {
+	width: 25%;
+	p {
+	font-size: 14px;
+	margin-bottom: 0px;
+	}
+}
+
+
+.width25 {
+	width: 25%;
+	position: relative;
+	h1 {
+		padding-bottom: 46px;
+	}
+}
+
+
+.insta-block {
+	display: flex;
+	margin-bottom: 50px;
+	&::before {
+		position: absolute;
+        content: "";
+        height: 1px;
+		width: 90%;
+        background: #333;
+		bottom: 80px;
+        opacity: 6%;
+	}
+}
+
+
+.item-image {
+	width: 100%;
+	a {
+		display: block;
+		padding: 0 5px;
+	}
+}
+
+
+.banks-payment-line {
+	display: flex;
+	@extend %listreset;
+	flex-wrap: wrap;
+	&::before {
+		position: absolute;
+        content: "";
+        height: 1px;
+        width: 90%;
+        background: #333;
+        bottom: 0px;
+        opacity: 6%;
+	}
+}
+
+.bank-payment-block {
+	width: 43px;
+    padding: 0 5px;
+}
+
+.pay-watch {
+	display: block;
+	margin-right: 14px;
+}
+
+
+.social-list-line-footer{
+	padding-bottom: 58px;
+	padding-top: 12px;
+	margin: 0 -15px;
+}
+
+
+.social-list-line-footer ul {
+	@extend %listreset;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: "";
+		height: 2px;
+		width: 400px;
+		background: $black;
+		top: 54px;
+		opacity: 6%;
+	}
+	li {
+		padding: 0 15px;
+	}
+	a {
+		display: inline-block;
+		color: $black;
+		font-size: 22px;
+	}
+}
+
+.copyrights {
+	background: #48689a;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    text-align: center;
+	span {
+		margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 0.5px;
+        padding-left: 15px;
+        padding-right: 6px;
+        line-height: 1.4;
+	}
+}
