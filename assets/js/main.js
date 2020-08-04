@@ -9,9 +9,8 @@ function initBurgerMenu() {
         e.preventDefault()
         jQuery(this).toggleClass('open');
         jQuery('body').toggleClass('burger-active');
-        
     });
-  }
+}
 
 
 function initSlickSlider() {
